@@ -59,7 +59,7 @@ Etape de dezvoltare:
 
 2. Meniu
 
-         Descriere: Pe LCDul sistemului (ex. LCD 16x2) se va afișa un meniu conform schemei de mai jos, iar navigarea prin acesta se va face de la 4 butoane de tip push-button.
+        Descriere: Pe LCDul sistemului (ex. LCD 16x2) se va afișa un meniu conform schemei de mai jos, iar navigarea prin acesta se va face de la 4 butoane de tip push-button.
     
 3. Mesaje
 
