@@ -54,26 +54,27 @@ Etape de dezvoltare:
 
 1. LCD
 
-Descriere: Pe LCDul sistemului (ex. LCD 16x2) se va afișa temperatura curenta de la un senzor de temperatura (ex. LM35).
+        Descriere: Pe LCDul sistemului (ex. LCD 16x2) se va afișa temperatura curenta de la un senzor de temperatura (ex. LM35).
 
 
 2. Meniu
 
-Descriere: Pe LCDul sistemului (ex. LCD 16x2) se va afișa un meniu conform schemei de mai jos, iar navigarea prin acesta se va face de la 4 butoane de tip push-button.
+         Descriere: Pe LCDul sistemului (ex. LCD 16x2) se va afișa un meniu conform schemei de mai jos, iar navigarea prin acesta se va face de la 4 butoane de tip push-button.
+    
 3. Mesaje
 
-Descriere: Prin comunicație seriala de la un PC se transfera mesaje text către microcontroller, iar ultimele 10 mesaje vor fi stocate în memoria nevolatila. Acestea vor fi afișate inițial în meniul 1.1(mesaje necitite), iar în urma citirii unui mesaj acesta va fi mutat în meniul 1.2(mesaje citite). Ștergerea tuturor mesajelor salvate se poate face de la tastatura sistemului din meniul 1.3(ștergere). 
+        Descriere: Prin comunicație seriala de la un PC se transfera mesaje text către microcontroller, iar ultimele 10 mesaje vor fi stocate în memoria nevolatila. Acestea vor fi         afișate inițial în meniul 1.1(mesaje necitite), iar în urma citirii unui mesaj acesta va fi mutat în meniul 1.2(mesaje citite). Ștergerea tuturor mesajelor salvate se poate face de la tastatura sistemului din meniul 1.3(ștergere). 
 
 
 4. Jurnal evenimente
 
-Descriere: Dezvoltarea și implementarea unui senzor de inundații. Se vor salva în memoria nevolatila data și ora ultimelor 10 evenimente de tip inundație. Aceste eveniment vor putea fi accesate și din meniul 4(inundații). De asemenea la detecția unui eveniment de tip inundație se va transmite un e-mail către o adresa prestabilita.
+        Descriere: Dezvoltarea și implementarea unui senzor de inundații. Se vor salva în memoria nevolatila data și ora ultimelor 10 evenimente de tip inundație. Aceste eveniment vor putea fi accesate și din meniul 4(inundații). De asemenea la detecția unui eveniment de tip inundație se va transmite un e-mail către o adresa prestabilita.
 
 5. Interfața Web
 
-Descriere: Implementarea serverului ce comunică cu microcontrollerul printr-o interfață web accesată din browser. Din această interfață se vor putea trimite mesaje către microcontroller (vezi 3), se va putea controla un LED prin acțiuni ON/OFF sau acțiuni  pentru alegerea culorii LED-ului RGB și de asemenea se va putea citi temperatura curentă a sistemului.
+        Descriere: Implementarea serverului ce comunică cu microcontrollerul printr-o interfață web accesată din browser. Din această interfață se vor putea trimite mesaje către microcontroller (vezi 3), se va putea controla un LED prin acțiuni ON/OFF sau acțiuni  pentru alegerea culorii LED-ului RGB și de asemenea se va putea citi temperatura curentă a sistemului.
 
 
 6. Control Acces (optional)
 
-Descriere: În modul blocat LCD-ul va afișa ora, temperatura curentă și numărul mesajelor necitite. (ex. “    18:02    “, “16°C - 2 mesaje”). Accesul la meniu este permis după introducerea unei secvente de control (ex. “2 x OK, 2 x Back, 2 x OK”).
+        Descriere: În modul blocat LCD-ul va afișa ora, temperatura curentă și numărul mesajelor necitite. (ex. “    18:02    “, “16°C - 2 mesaje”). Accesul la meniu este permis după introducerea unei secvente de control (ex. “2 x OK, 2 x Back, 2 x OK”).
