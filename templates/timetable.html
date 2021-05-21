@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Timetable RGB</title>
+
+<style> 
+input[type=text] {
+  width: 400px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 20px;
+  position: fixed;
+  left:468px;
+  bottom: 250px;
+  background-color: #CCCCCC;
+}
+input[type=submit]{
+  width:200px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 0;
+  outline: none;
+  cursor: pointer; 
+  position:fixed; 
+  background-color: #CCCCCC;
+}
+
+.comboBox{
+  width:200px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 0;
+  outline: none;
+  cursor: pointer; 
+  position:fixed; 
+  left:500px; 
+  top:400px;
+  background-color: #CCCCCC;
+}
+
+input[type=button]
+{
+  width:150px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 0;
+  outline: none;
+  cursor: default;
+  margin-left:60px;
+}
+
+.red
+{
+	background-color:#FF0000;
+}
+.orange
+{
+	background-color:#FF7F00;
+}
+.yellow
+{
+	background-color:#FFFF00;
+}
+.green
+{
+	background-color:#00FF00;
+}
+.blue
+{
+	background-color:#0000FF;
+}.indigo
+{
+	background-color:#4B0082;
+}.violet
+{
+	background-color:#9400D3;
+}
+
+.buttons{
+  display:flex;
+  position:fixed;
+  bottom:100px;
+}
+
+</style>
+
+</head>
+<body style="background-color:#02182B;">
+<p style="text-align:center; font-size:300%; color:#0197F6; position:relative; top:150px;">RGB control using a Timetable:</p>
+
+<select name="timetable" id="timetable" class="comboBox">
+    <option value="rogvaiv">R-O-G-V-A-I-V</option>
+    <option value="viavgor">V-I-A-V-G-O-R</option>
+	<option value="agiovrv">A-G-I-O-V-R-V</option>
+</select>
+
+<div class="buttons">
+<input type='button' class='none' id='monday' value='Monday'>
+<input type='button' class='none' id='tuesday' value='Tuesday'>
+<input type='button' class='none' id='wednesday' value='Wednesday'>
+<input type='button' class='none' id='thursday' value='Thursday'>
+<input type='button' class='none' id='friday' value='Friday'>
+<input type='button' class='none' id='saturday' value='Saturday'>
+<input type='button' class='none' id='sunday' value='Sunday'>
+</div>
+
+<input type="submit" value="Change Timetable" onclick="colorChanger()" style="right:500px;top:400px;">
+
+<form action="#" method="post">
+<input type="hidden" id="todayColor" name="todayColor"/>
+<input type="submit" style="left:668px; bottom:200px;" onclick="sendData()" value="Send Timetable"/>
+</form>
+
+<script>
+function colorChanger() {
+  var timetableIndex = document.getElementById("timetable").selectedIndex;
+  switch(timetableIndex)
+  {
+	case 0:
+		document.getElementById('monday').className = 'red';
+		document.getElementById('tuesday').className = 'orange';
+		document.getElementById('wednesday').className = 'yellow';
+		document.getElementById('thursday').className = 'green';
+		document.getElementById('friday').className = 'blue';
+		document.getElementById('saturday').className = 'indigo';
+		document.getElementById('sunday').className = 'violet';
+	break;
+	case 1:
+		document.getElementById('monday').className = 'violet';
+		document.getElementById('tuesday').className = 'indigo';
+		document.getElementById('wednesday').className = 'blue';
+		document.getElementById('thursday').className = 'green';
+		document.getElementById('friday').className = 'yellow';
+		document.getElementById('saturday').className = 'orange';
+		document.getElementById('sunday').className = 'red';
+	break;
+	case 2:
+		document.getElementById('monday').className = 'blue';
+		document.getElementById('tuesday').className = 'yellow';
+		document.getElementById('wednesday').className = 'indigo';
+		document.getElementById('thursday').className = 'orange';
+		document.getElementById('friday').className = 'violet';
+		document.getElementById('saturday').className = 'red';
+		document.getElementById('sunday').className = 'green';
+	break;
+  }
+}
+function sendData(){
+	var timetableIndex = document.getElementById("timetable").selectedIndex;
+	var elementID;
+	var elementStyle;
+	var dateNow = new Date();
+    var dayNow = dateNow.getDay();
+	switch(dayNow)
+	{
+		case 1: 
+			elementID = document.getElementById('monday');
+		break;
+		case 2: 
+			elementID = document.getElementById('tuesday');
+		break;
+		case 3:
+			elementID = document.getElementById('wednesday');
+		break;
+		case 4: 
+			elementID = document.getElementById('thursday');
+		break;
+		case 5: 
+			elementID = document.getElementById('friday');
+		break;
+		case 6: 
+			elementID = document.getElementById('saturday');
+		break;
+		case 7: 
+			elementID = document.getElementById('sunday');
+		break;
+	}
+	elementStyle = window.getComputedStyle(elementID);
+	var rgb_color = elementStyle.backgroundColor.toString();
+	
+	
+	var temp = rgb_color.split("(")[1].split(")")[0];
+	temp = temp.split(",");
+	var hex_code = temp.map(function(x){             //For each array element
+    x = parseInt(x).toString(16);      //Convert to a base16 string
+    return (x.length==1) ? "0"+x : x;  //Add zero if we get only one character
+	})
+	hex_code = "#"+hex_code.join("");
+	hex_code = hex_code.toUpperCase();
+	document.getElementById("todayColor").value = hex_code;
+}
+</script>
+</body>
+</html>
+
+<!-- 
+onsubmit="return false"
+-->
