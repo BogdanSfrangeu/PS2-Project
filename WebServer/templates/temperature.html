@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Temperature Control</title>
+
+<style>
+input[type=text] {
+  width: 100px;
+  padding: 12px;
+  border-radius: 8px;
+  text-align:center;
+  font-size: 18px;
+  position: fixed;
+  left: 800px;
+  background-color: #CCCCCC;
+}
+input[type=submit]{
+  width:200px
+  background-color:#CCCCCC;
+  font-size: 20px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  text-align:center; 
+  position:fixed; 
+  left: 668px;
+  bottom: 150px;
+}
+</style>
+<script>
+var sensorTemperature = {{ sensorTemperature }}
+</script>
+</head>
+<body style="background-color:#02182B;">
+<p style="text-align:center; font-size:300%; color:#0197F6; position:relative; top:150px;">Temperature check and command:</p>
+
+<label style="color: white; padding: 8px; font-size: 200%; position:fixed; top:350px; left:400px;">Current Temperature:</label>
+<label style="color: white; padding: 8px; font-size: 200%; position:fixed; top:450px; left:400px;">Command Temperature:</label>
+
+<input type="text" name="currrentTemp" value="{{ sensorTemperature }}" style="top: 350px;" disabled/>
+<form action="#" method="post">
+<input type="text" name="commandTemp" placeholder="..." style="top: 450px;"/>
+<input type="submit" name="writeTemp" value="Write Temperature"/>
+</form>
+</body>
+</html>
+
+<!-- 
+
+-->
