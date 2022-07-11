@@ -1,6 +1,7 @@
 # PS2_2021_Sfrangeu: Smart Home Control System using Arduino
 
 # 
+<img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/eecf6581d9acf84445938857546dec30bd392818/pictures/arduino3.jpg" width=50% height=50%>
 
 **Se va realiza un sistem de conducere pe bază de micro-controller care va efectua următoarele funcții:**
 - Citirea temperaturii sistemului de la distanță.
