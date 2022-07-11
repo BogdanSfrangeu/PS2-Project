@@ -50,10 +50,10 @@
     - Descriere: În modul blocat LCD-ul va afișa ora, temperatura curentă și numărul mesajelor necitite. (ex. “    18:02    “, “16°C - 2 mesaje”). Accesul la meniu este permis după introducerea unei secvente de control (ex. “2 x OK, 2 x Back, 2 x OK”).
 
 # Pictures of the command system:
-1. <img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/f0a2d97941647df78242a3bcca1bb4850e0f3f68/Pictures/arduino1.jpg" width=100% height=100%>
-2. <img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/f0a2d97941647df78242a3bcca1bb4850e0f3f68/Pictures/arduino2.jpg" width=100% height=100%>
-3. <img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/f0a2d97941647df78242a3bcca1bb4850e0f3f68/Pictures/main.jpg" width=100% height=100%>
-4. <img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/f0a2d97941647df78242a3bcca1bb4850e0f3f68/Pictures/message.jpg" width=100% height=100%>
-5. <img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/f0a2d97941647df78242a3bcca1bb4850e0f3f68/Pictures/timetable.jpg" width=100% height=100%>
+<img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/f0a2d97941647df78242a3bcca1bb4850e0f3f68/Pictures/arduino1.jpg" width=100% height=100%>
+<img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/f0a2d97941647df78242a3bcca1bb4850e0f3f68/Pictures/arduino2.jpg" width=100% height=100%>
+<img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/f0a2d97941647df78242a3bcca1bb4850e0f3f68/Pictures/main.jpg" width=100% height=100%>
+<img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/f0a2d97941647df78242a3bcca1bb4850e0f3f68/Pictures/message.jpg" width=100% height=100%>
+<img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/f0a2d97941647df78242a3bcca1bb4850e0f3f68/Pictures/timetable.jpg" width=100% height=100%>
 
-# Video of project: https://drive.google.com/file/d/1AJzTQYlTL1-HBfP4wPxry3pfQdGMPHpf/view?usp=sharing
+# Video of the project: https://drive.google.com/file/d/1AJzTQYlTL1-HBfP4wPxry3pfQdGMPHpf/view?usp=sharing
