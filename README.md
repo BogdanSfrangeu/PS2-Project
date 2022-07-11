@@ -2,6 +2,8 @@
 
 <img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/2ed52213b791911996e9ebbd889f0ca665510084/Proiect%20Final%20.png" width=100% height=100%>
 
+<img src="https://drive.google.com/file/d/1AJzTQYlTL1-HBfP4wPxry3pfQdGMPHpf/view?usp=sharing" width=100% height=100%>
+
 **Se va realiza un sistem de conducere pe bază de micro-controller care va efectua următoarele funcții:**
 - Citirea temperaturii sistemului de la distanță.
 - Controlul luminilor LED de la distanță. ( 1 LED - control on/off), 1 LED RGB - controlul culorii.
