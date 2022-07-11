@@ -1,9 +1,9 @@
 # PS2_2021_Sfrangeu: Smart Home Control System using Arduino
 
-# 
-<img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/eecf6581d9acf84445938857546dec30bd392818/pictures/arduino1.jpg" width=50% height=50%>
-<img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/eecf6581d9acf84445938857546dec30bd392818/pictures/arduino2.jpg" width=75% height=75%>
-<img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/eecf6581d9acf84445938857546dec30bd392818/pictures/arduino3.jpg" width=100% height=100%>
+<img src="https://github.com/BogdanSfrangeu/PS2-Project/blob/2ed52213b791911996e9ebbd889f0ca665510084/Proiect%20Final%20.png" width=100% height=100%>
+
+# Table of Contents:
+1. 
 
 **Se va realiza un sistem de conducere pe bază de micro-controller care va efectua următoarele funcții:**
 - Citirea temperaturii sistemului de la distanță.
@@ -48,7 +48,6 @@
 
 5. Interfața Web
     - Descriere: Implementarea serverului ce comunică cu microcontrollerul printr-o interfață web accesată din browser. Din această interfață se vor putea trimite mesaje către microcontroller (vezi 3), se va putea controla un LED prin acțiuni ON/OFF sau acțiuni  pentru alegerea culorii LED-ului RGB și de asemenea se va putea citi temperatura curentă a sistemului.
-
 
 6. Control Acces (optional)
     - Descriere: În modul blocat LCD-ul va afișa ora, temperatura curentă și numărul mesajelor necitite. (ex. “    18:02    “, “16°C - 2 mesaje”). Accesul la meniu este permis după introducerea unei secvente de control (ex. “2 x OK, 2 x Back, 2 x OK”).
